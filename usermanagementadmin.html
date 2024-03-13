@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .user-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="password"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+            form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+        .user-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .user-list ul li {
+                margin-bottom: 10px;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manage Users</h1>
+        <nav>
+            <ul>
+                <li><a href="admin_dashboard.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="users">
+            <div class="user-form">
+                <h2>Create New User</h2>
+                <form action="createUser" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="role">Role:</label>
+                    <select id="role" name="role" required>
+                        <option value="Operator">Operator</option>
+                        <option value="Viewer">Viewer</option>
+                    </select>
+                    <button type="submit">Create User</button>
+                </form>
+            </div>
+            <div class="user-list">
+                <h2>Current Users</h2>
+                <ul>
+                    <li>Username: John Doe | Role: Operator <button>Edit</button> <button>Delete</button></li>
+                    <li>Username: Jane Smith | Role: Viewer <button>Edit</button> <button>Delete</button></li>
+                    <!-- Additional users listed here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Telecom Network Inventory System</p>
+    </footer>
+</body>
+</html>

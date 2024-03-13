@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #666;
+            margin-top: 30px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="submit"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23616161"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+            background-repeat: no-repeat;
+            background-position-x: calc(100% - 10px);
+            background-position-y: center;
+            padding-right: 30px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <h1>Manage Inventory</h1>
+    <!-- Form for Adding a New Vendor -->
+    <h2>Add New Vendor</h2>
+    <form action="addVendor" method="post">
+        <label for="vendorName">Vendor Name:</label>
+        <input type="text" id="vendorName" name="vendorName" required>
+        <label for="vendorLocation">Location:</label>
+        <input type="text" id="vendorLocation" name="vendorLocation" required>
+        <input type="submit" value="Add Vendor">
+    </form>
+    <!-- Form for Adding a Network Component -->
+    <h2>Add Network Component</h2>
+    <form action="addComponent" method="post">
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" required>
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required>
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Active">Active</option>
+            <option value="Maintenance">Maintenance</option>
+            <!-- Add more options as needed -->
+        </select>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        <label for="vendorId">Vendor ID:</label>
+        <input type="text" id="vendorId" name="vendorId" required>
+        <input type="submit" value="Add Component">
+    </form>
+
+    <!-- Form for Updating a Network Component -->
+    <h2>Update Network Component</h2>
+    <form action="updateComponent" method="post">
+        <label for="componentId">Component ID:</label>
+        <input type="text" id="componentId" name="componentId" required>
+        <label for="newStatus">New Status:</label>
+        <select id="newStatus" name="newStatus" required>
+            <option value="Active">Active</option>
+            <option value="Maintenance">Maintenance</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input type="submit" value="Update Component">
+    </form>
+
+    <!-- Form for Deleting a Network Component -->
+    <h2>Delete Network Component</h2>
+    <form action="deleteComponent" method="post">
+        <label for="deleteComponentId">Component ID:</label>
+        <input type="text" id="deleteComponentId" name="deleteComponentId" required>
+        <input type="submit" value="Delete Component">
+    </form>
+</body>
+</html>

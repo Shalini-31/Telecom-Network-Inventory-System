@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fault Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .fault-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .fault-list ul li {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+
+                .fault-list ul li button {
+                    margin-left: 10px;
+                    padding: 8px 16px;
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fault Management</h1>
+        
+    </header>
+    <main>
+        <section>
+            <h2>Fault Records</h2>
+            <div class="fault-list">
+                <ul>
+                    <li>
+                        Fault ID: F001 | Component ID: N003 | Detected On: 2024-02-25 | Severity: Critical | Status: Resolved | Description: Power failure detected
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </li>
+                    <li>
+                        Fault ID: F002 | Component ID: N002 | Detected On: 2024-03-05 | Severity: High | Status: Investigating | Description: Packet loss observed
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </li>
+                    <!-- Add more fault records here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Telecom Network Inventory System</p>
+    </footer>
+</body>
+</html>

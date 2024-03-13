@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #555;
+            }
+    </style>
+</head>
+<body>
+    <h1>Viewer Dashboard</h1>
+
+    <!-- Network Component Information -->
+    <h2>Network Component Information</h2>
+    <table>
+        <tr>
+            <th>Component ID</th>
+            <th>Type</th>
+            <th>Model</th>
+            <th>Status</th>
+            <th>Location</th>
+            <th>Vendor ID</th>
+        </tr>
+        <!-- Sample data -->
+        <tr>
+            <td>N001</td>
+            <td>Router</td>
+            <td>Cisco Catalyst 9500</td>
+            <td>Active</td>
+            <td>Atlanta, GA</td>
+            <td>V001</td>
+        </tr>
+        <!-- Add more rows for other network components -->
+    </table>
+
+    <!-- Button for Reporting a Fault -->
+    <h2>Report a Fault</h2>
+    <form action="reportFault" method="post">
+        <label for="faultDescription">Fault Description:</label><br>
+        <textarea id="faultDescription" name="faultDescription" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Report Fault</button>
+    </form>
+</body>
+</html>

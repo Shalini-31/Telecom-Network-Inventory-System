@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .user-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .user-list ul li {
+                margin-bottom: 10px;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Admin</h1>
+        <nav>
+            <ul>
+                <li><a href="usermanagementadmin.html">Manage User</a></li>
+                <li><a href="inventory.html">Manage Inventory</a></li>
+                <li><a href="vendor.html">Manage vendors</a></li>
+                <li><a href="report.html">View Reports</a></li>
+                <li><a href="fault.html">Manage fault</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="users">
+            <div class="user-list">
+                <h2>Current Users</h2>
+                <ul>
+                    <li>Username: John Doe | Role: Operator <button>Delete</button></li>
+                    <li>Username: Jane Smith | Role: Viewer <button>Delete</button></li>
+                    <!-- Additional users listed here -->
+                </ul>
+            </div>
+        </section>
+        <!-- Additional sections for inventory management and reports -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Telecom Network Inventory System</p>
+    </footer>
+</body>
+</html>
