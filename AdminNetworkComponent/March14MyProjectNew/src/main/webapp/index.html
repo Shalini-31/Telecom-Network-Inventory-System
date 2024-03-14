@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Add New Component</h1>  
+<form action="SaveServlet" method="post">  
+<table>  
+<tr><td>Type:</td><td><input type="text" name="type"/></td></tr>  
+<tr><td>Model:</td><td><input type="text" name="model"/></td></tr> 
+<tr><td>Status:</td><td>
+	<select name="status">
+	<option>Active</option>
+	<option>Inactive</option>
+	<option>Maintenance</option>
+	</select>
+</td></tr> 
+<tr><td>Location:</td><td><input type="text" name="location"/></td></tr>  
+<tr><td>Vendor ID:</td><td><input type="text" name="vid"/></td></tr>  
+<tr><td colspan="2"> <input type="submit" value="Save Component" onclick="myFunction()" /></td></tr>  
+</table>
+</form>  
+<br/>  
+<a href="ViewServlet">view Components</a>  
+
+<script>
+
+    function myFunction(){
+    	alert("Record Added Successfully!");
+    //	window.location.href="ViewServlet";
+    }
+</script>
+
+</body>
+</html>
