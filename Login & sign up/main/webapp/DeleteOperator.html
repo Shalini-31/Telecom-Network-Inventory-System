@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete User</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+            background-color:  rgb(255, 0, 0);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #555;
+        }
+    .container {
+        max-width: 950px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+  <header>
+        <h1>Manage Users</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Mangageuser.html">Manage Users</a></li>
+            <li><a href="ManageInventory.html">Manage Inventory</a></li>
+            <li><a href="ManageVendors.html">Manage Vendors</a></li>
+            <li><a href="ViewReports.html">View Reports</a></li>
+            <li><a href="ManageFault.html">Manage Fault</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+<div class="container">
+    <h2>Delete Operator</h2>
+    <form action="deleteOperator" method="post">
+        <label for="deleteUser">Operator to delete:</label>
+        <input type="text" id="deleteUser" name="deleteUser" required>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+</body>
+</html>
