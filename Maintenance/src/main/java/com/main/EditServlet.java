@@ -71,9 +71,21 @@ public class EditServlet extends HttpServlet {
                 String Status = rs.getString("Status");
                 
                 out.println("<style>");
-                out.println("input[type='text'] { width: 450px; padding: 10px; margin-bottom: 10px; }"); // Increased width to 300px
+                out.println("body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #E2E6E8; }");
+                out.println("header { background-color: #0C4160; color: #FFF; padding: 20px 0; text-align: center; }");
+                out.println("header h1 { margin: 0; }");
+                out.println("nav { background-color: #C1C3BE; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }");
+                out.println("nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }");
+                out.println("nav ul li { display: inline; margin-right: 20px; }");
+                out.println("nav ul li a { color: #545B5C; text-decoration: none; font-weight: bold; }");
+                out.println("nav ul li a:hover { color: #AEA885; }");
+                out.println("form { margin: 20px auto; width: 50%; }");
+                out.println("input[type='text'] { width: 100%; padding: 10px; margin-bottom: 10px; }");
                 out.println("input[type='submit'] { background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%; }");
+                out.println("table { border-collapse: collapse; width: 100%; border: 1px solid #DDD; }");
+                out.println("th, td { border: 1px solid #DDD; text-align: left; padding: 8px; }");
                 out.println("</style>");
+
 
 
                 out.println("<tr><td>ScheduleId:</td><td><input type='text'  name='ScheduleId' value='" + ScheduleId

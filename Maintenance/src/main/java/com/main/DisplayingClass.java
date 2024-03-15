@@ -47,31 +47,28 @@ public class DisplayingClass extends HttpServlet {
             out.println("</style>");
             out.println("</head>");
             out.println("<body>");
-          //  out.println("<h2>Maintenance Data Display</h2>");
+
             out.println("<table>");
-//            out.println("<tr>");
-//            out.println("<th>ScheduleId</th>");
-//            out.println("<th>ComponentId</th>");
-//            out.println("<th>MaintenanceDate</th>");
-//            out.println("<th>MaintenanceType</th>");
-//            out.println("<th>Status</th>");
-//            out.println("<th>Actions</th>");
-//            out.println("</tr>");
- 
+
             out.println("<html><head><title>Maintenance Data Display</title>");
             out.println("<style>");
-            out.println("body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }");
-            out.println("header { background-color: rgb(255, 0, 0); color: #fff; padding: 20px 0; text-align: center; }");
+            out.println("body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #E2E6E8; }");
+            out.println("header { background-color: #0C4160; color: #FFF; padding: 20px 0; text-align: center; }");
             out.println("header h1 { margin: 0; }");
-            out.println("nav { background-color: #fff; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }");
+            out.println("nav { background-color: #C1C3BE; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }");
             out.println("nav ul { list-style-type: none; margin: 0; padding: 0; text-align: center; }");
             out.println("nav ul li { display: inline; margin-right: 20px; }");
-            out.println("nav ul li a { color: #333; text-decoration: none; font-weight: bold; }");
-            out.println("nav ul li a:hover { color: #555; }");
+            out.println("nav ul li a { color: #545B5C; text-decoration: none; font-weight: bold; }");
+            out.println("nav ul li a:hover { color: #AEA885; }");
+            out.println("table { border-collapse: collapse; width: 100%; border: 1px solid #DDD; }");
+            out.println("th, td { border: 1px solid #DDD; text-align: left; padding: 8px; }");
+            out.println("tr:nth-child(even) { background-color: #f2f2f2; }");
             out.println("</style>");
+
+
             out.println("</head><body>");
  
-            out.println("<header><h1>Maintenance Data Display</h1></header>");
+            out.println("<header><h1>Maintenance Schedule</h1></header>");
             out.println("<nav><ul>");
             out.println("<li><a href=\"Mangageuser.html\">Manage Users</a></li>");
             out.println("<li><a href=\"ManageInventory.html\">Manage Inventory</a></li>");
