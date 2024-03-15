@@ -71,7 +71,7 @@ public class DisplayingClass extends HttpServlet {
             out.println("</style>");
             out.println("</head><body>");
  
-            out.println("<header><h1>Manage Users</h1></header>");
+            out.println("<header><h1>Maintenance Data Display</h1></header>");
             out.println("<nav><ul>");
             out.println("<li><a href=\"Mangageuser.html\">Manage Users</a></li>");
             out.println("<li><a href=\"ManageInventory.html\">Manage Inventory</a></li>");
