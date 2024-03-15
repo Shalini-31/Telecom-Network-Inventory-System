@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0 auto;
+          
+    }
+    
+    #box {
+        position: relative;
+        width: 600px; /* Adjusted overall width */
+       
+        border-radius: 20px;
+        padding: 40px;
+       
+        box-sizing: border-box;
+        background: #ecf0f3;
+        box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    }
+    
+    h2 {
+        color: #333;
+        text-align: center;
+           
+      
+       
+    }
+    
+    form {
+        max-width: 300px; /* Max width of the form */
+       margin:0 auto 0 auto;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    
+    input[type="text"],
+    textarea {
+        width: calc(100% - 40px); /* Adjusted width */
+       
+        background: #ecf0f3;
+        padding: 10px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        border-radius: 20px;
+        box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+        resize: none;
+    }
+    
+    button[type="submit"] {
+        width: calc(100% - 10px); /* Adjusted width */
+        color: white;
+        margin-top: 20px;
+        background: grey;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 900;
+        box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+        transition: 0.5s;
+    }
+    #description{
+    
+    height:80px;
+    }
+    button[type="submit"]:hover {
+        background-color: #dc3545;
+        box-shadow: none;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <form action="faultdisplay" method="post">
+                <h2>Rise Your Fault here</h2>
+                
+                <label for="component_id">Component ID:</label>
+                <input type="text" id="component_id" name="component_id" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description"  name="description" required></textarea>
+                
+                <button onclick="hel()" type="submit">Submit</button>
+                <script>function hel() {
+                	alert("Successfully added");
+                	}
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
