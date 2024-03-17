@@ -114,7 +114,7 @@ public class DisplayFaultPage extends HttpServlet{
                         + FaultId +
                         "' style='text-decoration: none; color: white;'>Edit</a></button></td>" + "<td>"
                         + "<button style='background-color: red;'> <a href='FaultAdminDelete?FaultId="
-                        + FaultId + "' onclick='return confirm(\"Are you sure you want to delete this item?\");'>Delete</a></td></tr>");
+                        + FaultId + "' onclick='return confirm(\"Are you sure you want to delete this item?\");'style='text-decoration: none; color: white;'>Delete</a></td></tr>");
             }
  
             out.println("</table>"); // Close the table

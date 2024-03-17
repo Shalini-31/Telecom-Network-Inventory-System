@@ -50,7 +50,7 @@ public class CheckData extends HttpServlet
 	            + "}"
 	            + "table { border-collapse: collapse; width: 100%;Overflow: scroll;position: relative;  box-shadow: 9px 9px 13px #cbced1; margin-left:10px;}"
 	            + "th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; }"
-	            + "th { background-color: #0c4160; color:#fff; }"
+	            + "th { background-color: #C1C3BE; color: #545B5C; }"
 	            + "tr:nth-child(even) { background-color: #f9f9f9; }"
 	            + "#filterInput { margin-bottom: 10px;"
 	            + "  padding: 10px;\n"

@@ -78,8 +78,8 @@ public class DisplayingClass extends HttpServlet {
             out.println("</ul>");
             out.println("</nav>");
  
-            out.println("<h2>Maintenance Data Display</h2>");
-            out.println("<table border='1'><tr><th>ScheduleId</th><th>ComponentId</th><th>MaintenanceDate</th><th>MaintenanceType</th><th>Status</th><th>Actions1</th><th>Actions2</th></tr>");
+            out.println("<div align='center'><h2>Maintenance Data Display</h2></div>");
+            out.println("<table border='1'><tr><th style='background-color: #C1C3BE; color: #545B5C;'>ScheduleId</th><th style='background-color: #C1C3BE; color: #545B5C;'>ComponentId</th><th style='background-color: #C1C3BE; color: #545B5C;'>MaintenanceDate</th><th style='background-color: #C1C3BE; color: #545B5C;'>MaintenanceType</th><th style='background-color: #C1C3BE; color: #545B5C;'>Status</th><th style='background-color: #C1C3BE; color: #545B5C;'>Actions1</th><th style='background-color: #C1C3BE; color: #545B5C;'>Actions2</th></tr>");
  
             boolean recordsFound = false;
             while (rs.next()) {

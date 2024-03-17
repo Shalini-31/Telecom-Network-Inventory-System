@@ -34,7 +34,7 @@ public class ViewServletAD extends HttpServlet {
         out.println("nav ul li a { color: #545B5C; text-decoration: none; font-weight: bold; }"); // Modified navigation link text color
         out.println("nav ul li a:hover { color: #AEA885; }"); // Modified navigation link hover color
         out.println("table { width: 80%; margin: 20px auto; border-collapse: collapse; border-color: #DDD; }"); // Modified table border color
-        out.println("th { background-color: #C1C3BE; color: #333; }"); // Modified table heading color
+        out.println("th { background-color: #C1C3BE; color: #545B5C; }"); // Modified table heading color
         out.println("th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }");
         out.println(".btn { padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px; text-decoration: none; font-family: Arial, sans-serif; font-size: 14px; }");
         out.println(".btn-edit { background-color: green; color: white; }"); // Modified Edit button background color

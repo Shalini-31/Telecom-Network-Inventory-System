@@ -162,8 +162,8 @@ input#vendorID_update:focus {
     }
  
     th {
-        background-color: #545b5c;
-        color:white;
+        background-color: #C1C3BE;
+        color:#545B5C;
     }
     
     table tr:nth-child(even) {
